@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Ratpoison Session
+Name[ru]=Сеанс Ratpoison
+Name[tr]=Ratpoison Oturumu
+Comment=Use this session to run Ratpoison WM as your desktop environment
+Comment[ru]=Использовать этот сеанс, чтобы сделать Ratpoison WM вашим окружением
+Comment[tr]=Ratpoison WM'yi masaüstü ortamınız olarak kullanmak için bu oturumu kullanın
+Exec=/usr/local/bin/ratpoison
+Icon=
+Type=Application
+DesktopNames=Ratpoison WM
