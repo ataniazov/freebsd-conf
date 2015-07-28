@@ -17,6 +17,7 @@ firefox
 
 # Misc
 zip unzip rar unrar wget curl p7zip p7zip-codec-rar xarchiver ristretto
+fusefs-ext4fuse
 
 # Fonts
 webfonts urwfonts dejavu ubuntu-font terminus-font
