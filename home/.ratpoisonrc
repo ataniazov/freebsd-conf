@@ -37,8 +37,9 @@ exec setxkbmap -layout "us(dvorak),tr" -option "grp:alt_shift_toggle,grp_led:scr
 #exec nitrogen --restore
 
 bind d exec firefox --private-window
-bind D exec /home/delta/browser/tor-browser_ru/Browser/start-tor-browser --detach
+bind D exec ~/browser/tor-browser_ru/Browser/start-tor-browser --detach
 bind c exec xfce4-terminal
+bind V exec xterm -e ~/.screenlayout/lab_vga.sh && ratpoison -c "restart"
 #bind l exec xflock4
 #bind L exec x-terminal-emulator -e sudo poweroff
 definekey top Print exec mixer -S vol -5
