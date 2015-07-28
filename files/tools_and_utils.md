@@ -16,7 +16,7 @@ vlc cmus
 firefox
 
 # Misc
-zip unzip rar unrar wget curl 
+zip unzip rar unrar wget curl p7zip p7zip-codec-rar xarchiver ristretto
 
 # Fonts
 webfonts urwfonts dejavu ubuntu-font terminus-font
