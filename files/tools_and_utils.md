@@ -17,7 +17,7 @@ firefox
 
 # Misc
 zip unzip rar unrar wget curl p7zip p7zip-codec-rar xarchiver ristretto
-fusefs-ext4fuse
+fusefs-ext4fuse automount mtpfs xfce4-genmon-plugin xfce4-fsguard-plugin xfce4-power-manager
 
 # Fonts
 webfonts urwfonts dejavu ubuntu-font terminus-font
