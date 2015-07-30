@@ -8,7 +8,7 @@ set bgcolor #000000
 set fwcolor #00FF99
 
 # stalonetray arka planda bulunsun
-unmanage stalonetray
+#unmanage stalonetray
 
 
 ###############################
@@ -17,9 +17,10 @@ unmanage stalonetray
 exec pkill nm-applet
 exec pkill stalonetray
 exec pkill polkit-gnome-authentication-agent-1
+exec pkill xscreensaver
 
 
-exec sleep 0.5 && (/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 & stalonetray & nm-applet & xfsettingsd & xfce4-power-manager & light-locker & )
+exec sleep 0.5 && (/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 & xfsettingsd & xfce4-power-manager & xscreensaver -no-splash & )
 #/usr/lib/i386-linux-gnu/indicator-power/indicator-power-service & start-pulseaudio-x11 & 
 
 ##############################
@@ -40,8 +41,9 @@ bind d exec firefox --private-window
 bind D exec ~/browser/tor-browser_ru/Browser/start-tor-browser --detach
 bind c exec xfce4-terminal
 bind V exec xterm -e ~/.screenlayout/lab_vga.sh && ratpoison -c "restart"
-#bind l exec xflock4
-#bind L exec x-terminal-emulator -e sudo poweroff
+bind L exec xflock4
+#bind P exec x-terminal-emulator -e sudo poweroff
+
 definekey top Print exec mixer -S vol -5
 definekey top Scroll_Lock exec  mixer -S vol +5
 definekey top Pause exec mixer -S vol 0

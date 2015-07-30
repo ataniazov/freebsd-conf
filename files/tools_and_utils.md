@@ -10,7 +10,7 @@ vim git py27-ranger htop zathura(djvu,pdf)
 xorg dbus hal slim ratpoison xfce xfce-wm-themes 
 
 # Multimedia
-vlc cmus
+vlc cmus smplayer
 
 # Internet
 firefox irssi openvpn
