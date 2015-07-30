@@ -1,4 +1,5 @@
-TH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/games:/usr/local/sbin:/usr/local/bin:/usr/X11R6/bin:$HOME/bin; export PATH
+#!/bin/sh
+PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/games:/usr/local/sbin:/usr/local/bin:/usr/X11R6/bin:$HOME/bin; export PATH
 export LANG=en_US.UTF-8
 export LC_MESSAGES=en_US.UTF-8
 export LC_TIME=en_US.UTF-8

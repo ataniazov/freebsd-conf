@@ -18,6 +18,7 @@ firefox irssi openvpn
 # Misc
 zip unzip rar unrar wget curl p7zip p7zip-codec-rar xarchiver ristretto
 fusefs-ext4fuse automount mtpfs xfce4-genmon-plugin xfce4-fsguard-plugin xfce4-power-manager
+bash-completion
 #### !!! WARNING: "automount" will cause long system booting !!!
 
 # Fonts
