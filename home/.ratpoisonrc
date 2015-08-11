@@ -47,9 +47,3 @@ bind L exec (slock && xset dpms 0 0 60) & xset dpms 0 0 2 & xset dpms force off
 definekey top Print exec mixer -S vol -5
 definekey top Scroll_Lock exec  mixer -S vol +5
 definekey top Pause exec mixer -S vol 0
-
-
-### What I changed on default xubuntu system
-# xfce4-popup-applicationsmenu   Atl+F1
-# xfrun4 Alt+F2
-
