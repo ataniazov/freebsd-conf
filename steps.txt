@@ -1,0 +1,1 @@
+# echo "kern.ipc.shm_allow_removed=1" >> /etc/sysctl.conf

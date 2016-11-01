@@ -1,0 +1,36 @@
+================= ROOT ===================
+
+freebsd-update
+freebsd-update fetch
+freebsd-update install
+pkg update
+pkg upgrade
+
+pkg install sudo
+pkg install vim-lite
+
+visudo
+------------------------------------------
+%wheel ALL=(ALL) ALL
+------------------------------------------
+
+================= USER ===================
+
+sudo pkg install bash bash-completion
+# change default shell
+chsh -s /usr/local/bin/bash delta
+
+sudo pkg install git-lite
+
+sudo pkg install xorg
+sudo pkg install i3 i3status i3lock dmenu
+
+echo "exec /usr/local/bin/i3" > ~/.xinitrc
+cp /usr/local/etc/i3/config /home/delta/.config/i3/config
+
+startx
+
+sudo pkg install xfce4-terminal
+
+sudo pkg install chromium
+# echo "kern.ipc.shm_allow_removed=1" >> /etc/sysctl.conf
