@@ -199,13 +199,16 @@ hide_edge_borders none
 focus_follows_mouse no
 
 # StartUp daemons
+exec --no-startup-id xfsettingsd
+# Wallpaper setting
+exec_always --no-startup-id feh --bg-scale ~/Pictures/arc.jpg
 
-# setting caps-lock as a modifier and dvorak as keyboard
+# Set caps-lock as a modifier and dvorak as keyboard
 exec_always --no-startup-id setxkbmap -layout "us(dvorak-intl),tr" -option "grp:alt_shift_toggle,grp_led:scroll" -option caps:hyper
 
-# ratpoison-like behaviour hot-keys
-bindsym $mod+Shift+minus exec xdotoll getwindowfocus windowkill
-bindsym $mod+b exec --no-startup-id xdotoll mousemove 1600 900
+# Set ratpoison-like behaviour hot-keys
+bindsym $mod+Shift+minus exec xdotool getwindowfocus windowkill
+bindsym $mod+b exec --no-startup-id xdotool mousemove 1600 900
 
 # Application lunch hot-keys
 bindsym $mod+Shift+g exec --no-startup-id chrome --incognito 

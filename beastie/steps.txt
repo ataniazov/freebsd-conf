@@ -23,14 +23,21 @@ chsh -s /usr/local/bin/bash delta
 sudo pkg install git-lite
 
 sudo pkg install xorg
-sudo pkg install i3 i3status i3lock dmenu
+sudo pkg install slim i3 i3status i3lock dmenu
 
 echo "exec /usr/local/bin/i3" > ~/.xinitrc
 cp /usr/local/etc/i3/config /home/delta/.config/i3/config
 
 startx
 
-sudo pkg install xfce4-terminal
+sudo pkg install xfce4-terminal thunar thunar-archive-plugin xarchiver
+sudo pkg install xdotool feh gtk-arc-themes
 
 sudo pkg install chromium
 # echo "kern.ipc.shm_allow_removed=1" >> /etc/sysctl.conf
+
+# Multimedia
+sudo pkg install vlc mpv
+
+# Sound
+sysctl hw.snd.default_unit=2

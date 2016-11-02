@@ -41,4 +41,4 @@ More themes could be found at SLiM site.
 Edit /usr/local/etc/slim.conf, set theme:
 
 #current_theme       default
-current_theme       freebs
+current_theme       freebsd
