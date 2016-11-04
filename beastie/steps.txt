@@ -30,7 +30,7 @@ cp /usr/local/etc/i3/config /home/delta/.config/i3/config
 
 startx
 
-sudo pkg install xfce4-terminal thunar thunar-archive-plugin xarchiver
+sudo pkg install xfce4-terminal thunar thunar-archive-plugin thunar-vfs xarchiver
 sudo pkg install xdotool feh gtk-arc-themes
 
 sudo pkg install chromium
@@ -41,3 +41,18 @@ sudo pkg install vlc mpv
 
 # Sound
 sysctl hw.snd.default_unit=2
+
+# Java
+sudo pkg install openjdk8 openjdk8-jre
+
+mount -t fdescfs fdesc /dev/fd
+mount -t procfs proc /proc
+
+# To make it permanent, you need the following lines in /etc/fstab:
+---------------------------------------------------------
+fdesc	/dev/fd		fdescfs		rw	0	0
+proc	/proc		procfs		rw	0	0
+---------------------------------------------------------
+
+# Intellij Idea
+sudo pkg install intellij
