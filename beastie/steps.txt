@@ -36,8 +36,11 @@ sudo pkg install xdotool feh gtk-arc-themes
 sudo pkg install chromium
 # echo "kern.ipc.shm_allow_removed=1" >> /etc/sysctl.conf
 
+# Useful utils
+sudo pkg install htop py27-ranger
+
 # Multimedia
-sudo pkg install vlc mpv
+sudo pkg install vlc mpv cmus
 
 # Sound
 sysctl hw.snd.default_unit=2

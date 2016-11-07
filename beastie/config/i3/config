@@ -200,6 +200,7 @@ focus_follows_mouse no
 
 # StartUp daemons
 exec --no-startup-id xfsettingsd
+exec --no-startup-id redshift -l 40.7:29.9 -t 5700:3500 -g 0.8 -m randr
 # Wallpaper setting
 exec_always --no-startup-id feh --bg-scale ~/Pictures/background.jpg
 
