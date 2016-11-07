@@ -4,7 +4,7 @@ sudo ssh -i /home/delta/.ssh/id_rsa -w 1:1 root@188.166.30.159 -p 22 -o PermitLo
 
 sudo ifconfig tun1 192.168.201.2 192.168.201.1 netmask 255.255.255.0
 sudo route add 8.8.8.8 188.166.30.159
-sudo route add 192.168.100.11 30.10.23.1
+sudo route add 188.166.11.230 30.10.23.1
 
 #sudo route del default
 #sudo route add default 192.168.201.1
@@ -20,6 +20,8 @@ route del 188.166.30.159 30.10.23.1
 route change default 30.10.23.1
 
 # server
+# PermitRootLogin yes
+# PermitTunnel yes
 ifconfig tun1 192.168.201.1 pointopoint 192.168.201.2 netmask 255.255.255.0
 
 echo 1 > /proc/sys/net/ipv4/ip_forward
@@ -35,3 +37,27 @@ ssh \
   -o ServerAliveInterval=60 \
   -w 5:5 vpn@example.com \
   'sudo ifconfig tun5 192.168.244.1 pointopoint 192.168.244.2 netmask 255.255.255.0; echo tun0 ready'
+
+
+# freebsd
+
+# sshd_config
+# -------------------
+# PermitRootLogin yes
+# PermitTunnel yes
+# -------------------
+
+# rc.conf
+# -------------------
+# gateway_enable="YES"
+# natd_enable="YES"
+# -------------------
+
+# sysctl.conf
+# -------------------
+# net.inet.ip.forwarding=1
+# -------------------
+
+sysctl net.inet.ip.fw.enable=1
+
+ifconfig tun1 192.168.201.1 192.168.201.2 netmask 255.255.255.0
