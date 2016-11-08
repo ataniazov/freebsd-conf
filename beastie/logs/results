@@ -1,0 +1,45 @@
+dejavu (xorg.conf)
+	Load "freetype"
+	FontPath "/usr/local/share/fonts/dejavu/"
+
+bash requires fdescfs(5) mounted on /dev/fd
+
+-----------------------------------------------------------------
+bash (fstab)
+If you have not done it yet, please do the following:
+	mount -t fdescfs fdesc /dev/fd
+To make it permanent, you need the following lines in /etc/fstab:
+	fdesc	/dev/fd		fdescfs		rw	0	0
+-----------------------------------------------------------------
+bash-completion (.bashrc)
+[[ $PS1 && -f /usr/local/share/bash-completion/bash_completion.sh ]] && \
+	source /usr/local/share/bash-completion/bash_completion.sh
+-----------------------------------------------------------------
+
+Message from fusefs-libs-2.9.5:
+Install the fuse kernel module to use this port.
+
+-----------------------------------------------------------------
+firefox 49.0
+general.useragent.override
+Mozilla/5.0 (X11; FreeBSD amd64; rv:49.0) Gecko/20100101 Firefox/49.0
+Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0
+
+-----------------------------------------------------------------
+openjdk
+
+If you have not done it yet, please do the following:
+
+	mount -t fdescfs fdesc /dev/fd
+	mount -t procfs proc /proc
+
+To make it permanent, you need the following lines in /etc/fstab:
+
+	fdesc	/dev/fd		fdescfs		rw	0	0
+	proc	/proc		procfs		rw	0	0
+
+-----------------------------------------------------------------
+slim (rc.conf)
+slim_enable="YES"
+
+-----------------------------------------------------------------
