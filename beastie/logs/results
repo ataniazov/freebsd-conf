@@ -1,3 +1,16 @@
+-----------------------------------------------------------------
+changed root files
+------------------
+/boot/loader.conf
+/etc/rc.conf
+/etc/sysctl.conf
+
+
+changed user files
+------------------
+.xinitrc
+
+-----------------------------------------------------------------
 dejavu (xorg.conf)
 	Load "freetype"
 	FontPath "/usr/local/share/fonts/dejavu/"
