@@ -1,3 +1,5 @@
+sudo pkg install
+----------------
 pkg
 sudo
 vim-tiny
@@ -30,3 +32,12 @@ mpv
 cmus
 openjdk8
 openjdk8-jre
+mkfontdir
+
+
+
+sudo make install clean
+-----------------------
+/usr/ports/x11-fonts/urwfonts
+/usr/ports/x11-fonts/urwfonts-ttf
+/usr/ports/x11-fonts/webfonts

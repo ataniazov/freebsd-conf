@@ -4,11 +4,22 @@ changed root files
 /boot/loader.conf
 /etc/rc.conf
 /etc/sysctl.conf
+/etc/hosts
+/etc/devfs.conf
+/usr/local/share/X11/xkb/symbols/us
+/usr/local/etc/X11/xorg.conf.d/driver-intel.conf
+/usr/local/etc/X11/xorg.conf.d/keyboard-zap.conf
+/usr/local/etc/X11/xorg.conf.d/keyboard-us-dvorak.conf
+/usr/local/share/slim/themes/default/background.jpg
+/usr/local/etc/slim.conf
+/usr/local/share/fonts/TrueType/
 
 
 changed user files
 ------------------
-.xinitrc
+~/.xinitrc
+~/.bashrc
+~/.fonts.conf
 
 -----------------------------------------------------------------
 dejavu (xorg.conf)
@@ -55,4 +66,41 @@ To make it permanent, you need the following lines in /etc/fstab:
 slim (rc.conf)
 slim_enable="YES"
 
+-----------------------------------------------------------------
+cd /usr/local/share/fonts/urwfonts
+sudo make install clean
+
+You'll have to add /usr/local/share/fonts/urwfonts
+to your X font path by either:
+
+$ xset fp+ /usr/local/share/fonts/urwfonts
+$ xset fp rehash
+
+or by adding it to your X-server configuration file (usually
+/etc/X11/xorg.conf) and restarting the X-server.
+
+cd /usr/local/share/fonts/urwfonts-ttf
+sudo make install clean
+
+$ xset fp+ /usr/local/share/fonts/urwfonts-ttf
+$ xset fp rehash
+
+-----------------------------------------------------------------
+/usr/ports/x11-fonts/urwfonts
+sudo make install clean
+
+"Modules"
+	Load "freetype"
+
+"Files"
+	FontPath "/usr/local/share/fonts/webfonts/"
+
+-----------------------------------------------------------------
+Windows default fonts copy
+
+mkdir /usr/local/share/fonts/TrueType
+cp Fonts/ /usr/local/share/fonts/TrueType
+mkfontdir
+
+	FontPath "/usr/local/share/fonts/TrueType/"
 -----------------------------------------------------------------
