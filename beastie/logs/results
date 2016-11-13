@@ -104,3 +104,79 @@ mkfontdir
 
 	FontPath "/usr/local/share/fonts/TrueType/"
 -----------------------------------------------------------------
+Message from pulseaudio-8.0:
+Pulseaudio doesn't know about the hw.snd.default_unit=3 sysctl for the
+FreeBSD OSS driver that is used to select the active input/output. So
+for Pulseaudio we also need to tell it which input/output to use. The
+difference is that Pulseaudio has separate input and output configure lines.
+
+To change the default sink (output):
+# pacmd set-default-sink 3
+To change the default source (input):
+# pacmd set-default-source 3
+
+This can also be set in /usr/local/etc/pulse/default.pa
+
+Replace the number '3' with the new default your want to set.
+
+-----------------------------------------------------------------
+Message from libinotify-20160505:
+============================================================================
+
+Libinotify functionality on FreeBSD is missing support for
+
+  - detecting a file being moved into or out of a directory within the
+    same filesystem
+  - certain modifications to a symbolic link (rather than the
+    file it points to.)
+
+in addition to the known limitations on all platforms using kqueue(2)
+where various open and close notifications are unimplemented.
+
+This means the following regression tests will fail:
+
+Directory notifications:
+   IN_MOVED_FROM
+   IN_MOVED_TO
+
+Open/close notifications:
+   IN_OPEN
+   IN_CLOSE_NOWRITE
+   IN_CLOSE_WRITE
+
+Symbolic Link notifications:
+   IN_DONT_FOLLOW
+   IN_ATTRIB
+   IN_MOVE_SELF
+   IN_DELETE_SELF
+
+Kernel patches to address the missing directory and symbolic link
+notifications are available from:
+
+https://github.com/libinotify-kqueue/libinotify-kqueue/tree/master/patches
+
+=============================================================================
+You might want to consider increasing the kern.maxfiles tunable if you plan
+to use this library for applications that need to monitor activity of a lot
+of files.
+
+If the default on your system is too low, add the following line to
+/boot/loader.conf, then reboot the system:
+
+    kern.maxfiles="25000"
+=============================================================================
+Message from intellij-2016.2.4:
+There is experimental native (faster) file watching support which is
+disabled by default.  Currently there are problems with watching large
+trees.  To enable edit /usr/local/intellij/bin/idea.properties and append
+
+      idea.filewatcher.disabled=false
+      idea.filewatcher.executable.path=/usr/local/intellij/bin/fsnotifier
+
+Only enable fsnotifier if your projects have < 600 files.
+
+At systems which use links for /usr/home/user or /home/user apparently
+IDEA finds two different VCS roots while trying to integrate with Git.
+Please, use as a VCS root only one of them.
+
+-----------------------------------------------------------------

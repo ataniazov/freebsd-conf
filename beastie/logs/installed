@@ -33,6 +33,9 @@ cmus
 openjdk8
 openjdk8-jre
 mkfontdir
+zathura-pdf-poppler
+zathura-djvu
+redshift
 
 
 

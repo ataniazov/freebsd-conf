@@ -1,0 +1,39 @@
+Updating FreeBSD repository catalogue...
+FreeBSD repository is up-to-date.
+All repositories are up-to-date.
+Updating FreeBSD repository catalogue...
+FreeBSD repository is up-to-date.
+All repositories are up-to-date.
+The following 5 package(s) will be affected (of 0 checked):
+
+New packages to be INSTALLED:
+	zathura-pdf-poppler: 0.2.6_2
+	zathura: 0.3.6_2
+	girara: 0.2.6_2
+	tex-synctex: 1.17.0_1
+	tex-kpathsea: 6.2.1_1
+
+Number of packages to be installed: 5
+
+The process will require 2 MiB more space.
+8 KiB to be downloaded.
+Fetching zathura-pdf-poppler-0.2.6_2.txz: . done
+Checking integrity... done (0 conflicting)
+[1/5] Installing tex-kpathsea-6.2.1_1...
+[1/5] Extracting tex-kpathsea-6.2.1_1: .......... done
+[2/5] Installing girara-0.2.6_2...
+[2/5] Extracting girara-0.2.6_2: .......... done
+[3/5] Installing tex-synctex-1.17.0_1...
+[3/5] Extracting tex-synctex-1.17.0_1: .......... done
+[4/5] Installing zathura-0.3.6_2...
+[4/5] Extracting zathura-0.3.6_2: .......... done
+[5/5] Installing zathura-pdf-poppler-0.2.6_2...
+[5/5] Extracting zathura-pdf-poppler-0.2.6_2: ...... done
+Message from zathura-0.3.6_2:
+===============================================================================
+
+    In order to read documents, zathura need at least one plugin. Such
+    plugins are in graphics/zathura-* ports. If you want to read pdf files,
+    install the graphics/zathura-pdf-poppler port.
+
+===============================================================================

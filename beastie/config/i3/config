@@ -211,5 +211,10 @@ exec_always --no-startup-id setxkbmap -layout "us(dvorak-intl),tr" -option "grp:
 bindsym $mod+Shift+minus exec xdotool getwindowfocus windowkill
 bindsym $mod+b exec --no-startup-id xdotool mousemove 1600 900
 
+# Sound control keys
+bindsym Print exec --no-startup-id mixer vol -5
+bindsym Scroll_Lock exec --no-startup-id mixer vol +5
+bindsym Pause exec --no-startup-id mixer vol 0
+
 # Application lunch hot-keys
 bindsym $mod+g exec --no-startup-id firefox --private-window
