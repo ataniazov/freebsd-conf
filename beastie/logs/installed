@@ -10,6 +10,7 @@ xorg
 slim
 i3
 i3status
+i3lock
 xdotool
 dmenu
 xfce4-terminal
