@@ -180,3 +180,30 @@ IDEA finds two different VCS roots while trying to integrate with Git.
 Please, use as a VCS root only one of them.
 
 -----------------------------------------------------------------
+Message from linux_base-c6-6.8_3:
+Some programs need linprocfs mounted on /compat/linux/proc.  Add the following
+line to /etc/fstab:
+
+linprocfs   /compat/linux/proc	linprocfs	rw	0	0
+
+Then run "mount linprocfs".
+-----------------------------------------------------------------
+chromium
+Message from droid-fonts-ttf-20131024_3:
+You can start using the fonts by following these instructions:
+
+Add the following line to the "Files" section of your X.org configuration
+file:
+
+	FontPath	"/usr/local/share/fonts/Droid/"
+Message from chromium-52.0.2743.116_1:
+For correct operation, shared memory support has to be enabled
+in Chromium by performing the following command as root :
+
+sysctl kern.ipc.shm_allow_removed=1
+
+To preserve this setting across reboots, append the following
+to /etc/sysctl.conf :
+
+kern.ipc.shm_allow_removed=1
+-----------------------------------------------------------------

@@ -18,26 +18,31 @@ xfce4-volumed
 xfce4-power-manager
 xfce4-notifyd
 xfce4-notification-daemon
-mousepad
-firefox
+xfce4-screenshooter-plugin
 thunar
 thunar-archive-plugin
 thunar-vfs
+mousepad
 gtk-arc-themes (+ github arc-icons)
 feh
 ristretto
 xarchiver
+firefox
 transmission-gtk
 mpv
 cmus
-openjdk8
-openjdk8-jre
 mkfontdir
 zathura-pdf-poppler
 zathura-djvu
 redshift
-xfce4-screenshooter-plugin
-
+openjdk8
+openjdk8-jre
+intellij
+gimp
+#linux-c6
+linux_base-c7
+chromium
+filezilla
 
 
 sudo make install clean

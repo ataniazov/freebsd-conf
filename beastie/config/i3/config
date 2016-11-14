@@ -200,7 +200,7 @@ focus_follows_mouse no
 
 # StartUp daemons
 exec --no-startup-id xfsettingsd
-exec --no-startup-id redshift -l 40.7:29.9 -t 5700:3500 -g 0.8 -m randr
+exec --no-startup-id redshift -l 40.7:29.9 -t 5700:5000 -g 0.8 -m randr
 # Wallpaper setting
 exec_always --no-startup-id feh --bg-scale ~/Pictures/background.jpg
 
@@ -218,3 +218,5 @@ bindsym Pause exec --no-startup-id mixer vol 0
 
 # Application lunch hot-keys
 bindsym $mod+g exec --no-startup-id firefox --private-window
+bindsym $mod+Shift+g exec --no-startup-id chrome --incognito
+
