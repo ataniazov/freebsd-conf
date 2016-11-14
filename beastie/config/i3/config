@@ -215,7 +215,7 @@ bindsym $mod+b exec --no-startup-id xdotool mousemove 1600 900
 bindsym Print exec --no-startup-id mixer vol -5
 bindsym Scroll_Lock exec --no-startup-id mixer vol +5
 #bindsym Pause exec --no-startup-id mixer vol 0
-bindsym Pause exec --no-startup-id $HOME/.config/i3/mutetoggle.sh
+bindsym Pause exec --no-startup-id $HOME/.config/i3/setvolume.sh
 
 # Application lunch hot-keys
 bindsym $mod+g exec --no-startup-id firefox --private-window			# Firefox
