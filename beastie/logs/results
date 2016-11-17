@@ -1,12 +1,14 @@
 -----------------------------------------------------------------
-changed root files
+edited root files
 ------------------
 /boot/loader.conf
 /etc/rc.conf
 /etc/sysctl.conf
+/etc/fstab
 /etc/hosts
 /etc/devfs.conf
 /etc/wpa_supplicant.conf
+/etc/make.conf
 /usr/local/share/X11/xkb/symbols/us
 /usr/local/etc/X11/xorg.conf.d/driver-intel.conf
 /usr/local/etc/X11/xorg.conf.d/keyboard-zap.conf
