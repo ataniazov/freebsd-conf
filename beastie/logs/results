@@ -5,9 +5,10 @@ edited root files
 /etc/rc.conf
 /etc/sysctl.conf
 /etc/fstab
+/etc/X11/xorg.conf
+/etc/wpa_supplicant.conf
 /etc/hosts
 /etc/devfs.conf
-/etc/wpa_supplicant.conf
 /etc/make.conf
 /usr/local/share/X11/xkb/symbols/us
 /usr/local/etc/X11/xorg.conf.d/driver-intel.conf
