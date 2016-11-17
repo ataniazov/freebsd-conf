@@ -43,7 +43,7 @@
 write_script() {
 cat << _EOF_
 #! /bin/sh
-VOLUME=100
+VOLUME=50
 if [ \$1 != '0' ]; then
 	mixer vol 0 > /dev/null
 	echo \$1

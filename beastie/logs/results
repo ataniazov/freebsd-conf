@@ -6,6 +6,7 @@ changed root files
 /etc/sysctl.conf
 /etc/hosts
 /etc/devfs.conf
+/etc/wpa_supplicant.conf
 /usr/local/share/X11/xkb/symbols/us
 /usr/local/etc/X11/xorg.conf.d/driver-intel.conf
 /usr/local/etc/X11/xorg.conf.d/keyboard-zap.conf

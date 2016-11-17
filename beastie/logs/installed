@@ -44,6 +44,9 @@ gimp
 linux_base-c7
 chromium
 filezilla
+htop
+ghc (haskell compiler)
+wpa_supplicant
 
 
 sudo make install clean
