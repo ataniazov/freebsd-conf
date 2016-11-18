@@ -228,6 +228,8 @@ focus_follows_mouse no
 
 # StartUp daemons
 exec --no-startup-id xfsettingsd
+exec --no-startup-id xfce4-power-manager
+exec --no-startup-id xfce4-volumed
 exec --no-startup-id redshift -l 40.7:29.9 -t 5700:5000 -g 0.8 -m randr
 # Wallpaper setting
 exec_always --no-startup-id feh --bg-scale ~/Pictures/background.jpg
@@ -236,7 +238,7 @@ exec_always --no-startup-id feh --bg-scale ~/Pictures/background.jpg
 exec_always --no-startup-id setxkbmap -layout "us(dvorak-intl),tr" -option "grp:alt_shift_toggle,grp_led:scroll" -option caps:hyper
 
 # Set ratpoison-like behaviour hot-keys
-bindsym $mod+Shift+minus exec xdotool getwindowfocus windowkill
+bindsym $mod+Shift+minus exec --no-startup-id xdotool getwindowfocus windowkill
 bindsym $mod+b exec --no-startup-id xdotool mousemove 1600 900
 # Toggle between dock mode and hide mode
 bindsym $mod+m bar mode toggle
@@ -249,11 +251,17 @@ bindsym Print exec --no-startup-id mixer vol -5
 bindsym Scroll_Lock exec --no-startup-id mixer vol +5
 #bindsym Pause exec --no-startup-id mixer vol 0
 bindsym Pause exec --no-startup-id $HOME/.config/i3/setvolume.sh
+# Multimedia keys
+bindsym XF86AudioLowerVolume exec --no-startup-id mixer vol -5
+bindsym XF86AudioRaiseVolume exec --no-startup-id mixer vol +5
+bindsym XF86AudioMute exec --no-startup-id $HOME/.config/i3/setvolume.sh
 
 # Application lunch hot-keys
-bindsym $mod+g exec firefox --private-window					# Firefox
-bindsym $mod+Shift+g exec chrome --incognito					# Chromium
-bindsym $mod+Shift+backslash exec --no-startup-id i3lock -n -d -c 000000 -f	# i3lock
+bindsym $mod+g exec firefox --private-window			# Firefox
+bindsym $mod+Shift+g exec chrome --incognito			# Chromium
+bindsym $mod+Shift+i exec idea					# Intellij IDEA
+bindsym $mod+Shift+backslash exec \
+		--no-startup-id i3lock -n -d -c 000000 -f	# i3lock
 
 # TESTING CONFIGURATIONS
 
@@ -263,5 +271,5 @@ bindsym $mod+Shift+backslash exec --no-startup-id i3lock -n -d -c 000000 -f	# i3
 mode "$mode_launcher" {
     bindsym Escape mode "default"
     bindsym Return mode "default"
-    bindsym m exec mousepad
+    bindsym m exec --no-startup-id mousepad
 }
