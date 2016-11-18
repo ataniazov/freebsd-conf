@@ -47,6 +47,9 @@ filezilla
 htop
 ghc (haskell compiler)
 wpa_supplicant
+py27-ranger
+terminus-font
+terminus-ttf
 
 
 sudo make install clean
