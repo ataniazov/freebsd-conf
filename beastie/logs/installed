@@ -52,6 +52,8 @@ wpa_supplicant
 py27-ranger
 terminus-font
 terminus-ttf
+xdg-user-dirs
+xfce
 
 
 sudo make install clean

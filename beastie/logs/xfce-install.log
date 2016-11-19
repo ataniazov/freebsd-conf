@@ -1,0 +1,62 @@
+New packages to be INSTALLED:
+	xfce: 4.12_1
+	xfce4-desktop: 4.12.3
+	orage: 4.12.1_1
+	popt: 1.16_1
+	libical: 1.0.1
+	xfce4-session: 4.12.1_3
+	xfce4-appfinder: 4.12.0
+	xfce4-wm: 4.12.3
+
+Number of packages to be installed: 8
+
+The process will require 14 MiB more space.
+4 MiB to be downloaded.
+
+Proceed with this action? [y/N]: y
+Fetching xfce-4.12_1.txz: 100%    792 B   0.8kB/s    00:01    
+Fetching xfce4-desktop-4.12.3.txz: 100%  729 KiB 746.9kB/s    00:01    
+Fetching orage-4.12.1_1.txz: 100%    2 MiB   1.6MB/s    00:01    
+Fetching popt-1.16_1.txz: 100%   60 KiB  61.9kB/s    00:01    
+Fetching libical-1.0.1.txz: 100%  276 KiB 283.0kB/s    00:01    
+Fetching xfce4-session-4.12.1_3.txz: 100%  599 KiB 613.2kB/s    00:01    
+Fetching xfce4-appfinder-4.12.0.txz: 100%  100 KiB 102.5kB/s    00:01    
+Fetching xfce4-wm-4.12.3.txz: 100%  468 KiB 479.2kB/s    00:01    
+Checking integrity... done (0 conflicting)
+[1/8] Installing popt-1.16_1...
+[1/8] Extracting popt-1.16_1: 100%
+[2/8] Installing libical-1.0.1...
+[2/8] Extracting libical-1.0.1: 100%
+[3/8] Installing xfce4-desktop-4.12.3...
+[3/8] Extracting xfce4-desktop-4.12.3: 100%
+[4/8] Installing orage-4.12.1_1...
+[4/8] Extracting orage-4.12.1_1: 100%
+[5/8] Installing xfce4-session-4.12.1_3...
+[5/8] Extracting xfce4-session-4.12.1_3: 100%
+[6/8] Installing xfce4-appfinder-4.12.0...
+[6/8] Extracting xfce4-appfinder-4.12.0: 100%
+[7/8] Installing xfce4-wm-4.12.3...
+[7/8] Extracting xfce4-wm-4.12.3: 100%
+[8/8] Installing xfce-4.12_1...
+Message from xfce4-session-4.12.1_3:
+To be able to shutdown or reboot your system, you'll have to add .rules
+files in /usr/local/etc/polkit-1/rules.d directory. Which looks
+like this (replace PUTYOURGROUPHERE by your group):
+
+polkit.addRule(function (action, subject) {
+  if ((action.id == "org.freedesktop.consolekit.system.restart" ||
+      action.id == "org.freedesktop.consolekit.system.stop")
+      && subject.isInGroup("PUTYOURGROUPHERE")) {
+    return polkit.Result.YES;
+  }
+});
+
+For those who have working suspend/resume:
+
+polkit.addRule(function (action, subject) {
+  if (action.id == "org.freedesktop.consolekit.system.suspend"
+      && subject.isInGroup("PUTYOURGROUPHERE")) {
+    return polkit.Result.YES;
+  }
+});
+

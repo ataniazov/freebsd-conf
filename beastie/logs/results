@@ -17,6 +17,7 @@ edited root files
 /usr/local/share/slim/themes/default/background.jpg
 /usr/local/etc/slim.conf
 /usr/local/share/fonts/TrueType/
+/usr/local/etc/polkit-1/rules.d/50-default.rules
 
 
 changed user files
@@ -236,4 +237,26 @@ following sizes:
         28 px or 21 pt
         32 px or 24 pt
 
+-----------------------------------------------------------------
+Message from xfce4-session-4.12.1_3:
+To be able to shutdown or reboot your system, you'll have to add .rules
+files in /usr/local/etc/polkit-1/rules.d directory. Which looks
+like this (replace PUTYOURGROUPHERE by your group):
+
+polkit.addRule(function (action, subject) {
+  if ((action.id == "org.freedesktop.consolekit.system.restart" ||
+      action.id == "org.freedesktop.consolekit.system.stop")
+      && subject.isInGroup("PUTYOURGROUPHERE")) {
+    return polkit.Result.YES;
+  }
+});
+
+For those who have working suspend/resume:
+
+polkit.addRule(function (action, subject) {
+  if (action.id == "org.freedesktop.consolekit.system.suspend"
+      && subject.isInGroup("PUTYOURGROUPHERE")) {
+    return polkit.Result.YES;
+  }
+});
 -----------------------------------------------------------------
