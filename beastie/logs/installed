@@ -24,6 +24,7 @@ thunar
 thunar-archive-plugin
 thunar-vfs
 mousepad
+gtk-xfce-engine
 gtk-arc-themes (+ github arc-icons)
 feh
 ristretto
@@ -44,6 +45,7 @@ gimp
 linux_base-c7
 chromium
 filezilla
+wget
 htop
 ghc (haskell compiler)
 wpa_supplicant
