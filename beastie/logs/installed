@@ -24,7 +24,6 @@ thunar
 thunar-archive-plugin
 thunar-vfs
 mousepad
-gtk-xfce-engine
 gtk-arc-themes (+ github arc-icons)
 feh
 ristretto
@@ -53,7 +52,8 @@ py27-ranger
 terminus-font
 terminus-ttf
 xdg-user-dirs
-xfce
+#gtk-xfce-engine
+#xfce
 
 
 sudo make install clean
