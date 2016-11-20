@@ -15,7 +15,7 @@ xdotool
 dmenu
 xfce4-terminal
 xfce4-settings
-xfce4-volumed
+#xfce4-volumed
 xfce4-power-manager
 xfce4-notifyd
 xfce4-notification-daemon
@@ -54,6 +54,7 @@ terminus-ttf
 xdg-user-dirs
 #gtk-xfce-engine
 #xfce
+zoneinfo
 
 
 sudo make install clean
