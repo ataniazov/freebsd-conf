@@ -212,7 +212,7 @@ force_display_urgency_hint 500 ms
 # Changing colors
 # class                 border  backgr. text    indicator child_border
 client.focused          #E7E8EB #E7E8EB #000000 #2e9ef4   #285577
-client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
+client.focused_inactive #333333 #494949 #ffffff #484e50   #5f676a
 client.unfocused        #333333 #222222 #888888 #292d2e   #222222
 client.urgent           #2f343a #900000 #ffffff #900000   #900000
 client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
@@ -226,11 +226,18 @@ new_float normal 0 px
 hide_edge_borders none
 focus_follows_mouse no
 
+# Kill StartUp daemons
+exec --no-startup-id pkill xfsettingsd
+#exec --no-startup-id pkill xfce4-power-manager
+exec --no-startup-id pkill xfce4-volumed
+exec --no-startup-id pkill redshift -l 40.7:29.9 -t 5700:5000 -g 0.8 -m randr
+
 # StartUp daemons
 exec --no-startup-id xfsettingsd
-exec --no-startup-id xfce4-power-manager
+#exec --no-startup-id xfce4-power-manager
 exec --no-startup-id xfce4-volumed
 exec --no-startup-id redshift -l 40.7:29.9 -t 5700:5000 -g 0.8 -m randr
+
 # Wallpaper setting
 exec_always --no-startup-id feh --bg-scale ~/Pictures/background.jpg
 
