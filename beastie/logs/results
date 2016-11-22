@@ -269,3 +269,75 @@ polkit.addRule(function (action, subject) {
   }
 });
 -----------------------------------------------------------------
+Message from esound-0.2.41_3:
+The ESounD daemon (esd) must be started on a per-user basis.  This is typically
+done by the Session Manager in GNOME.  However, if you are not using the
+GNOME Desktop, you will need to add something like the following to your
+X Windows initialization script:
+
+esd -terminate -nobeeps -as 2
+-----------------------------------------------------------------
+Message from crosextrafonts-carlito-20130920_2:
+You can start using the fonts by following these instructions:
+
+Add the following line to the "Files" section of your x.org configuration file:
+
+	FontPath "/usr/local/share/fonts/Carlito/"
+Message from firebird25-client-2.5.6_1:
+===>   NOTICE:
+
+The firebird25-client port currently does not have a maintainer. As a result, it is
+more likely to have unresolved issues, not be up-to-date, or even be removed in
+the future. To volunteer to maintain this port, please create an issue at:
+
+https://bugs.freebsd.org/bugzilla
+
+More information about port maintainership is available at:
+
+https://www.freebsd.org/doc/en/articles/contributing/ports-contributing.html#maintain-port
+Message from liberation-fonts-ttf-2.00.1,2:
+You can start using the fonts by following these instructions:
+
+Add the following line to the "Files" section of your x.org configuration file:
+
+	FontPath "/usr/local/share/fonts/Liberation/"
+Message from openldap-client-2.4.44:
+************************************************************
+
+The OpenLDAP client package has been successfully installed.
+
+Edit
+  /usr/local/etc/openldap/ldap.conf
+to change the system-wide client defaults.
+
+Try `man ldap.conf' and visit the OpenLDAP FAQ-O-Matic at
+  http://www.OpenLDAP.org/faq/index.cgi?file=3
+for more information.
+
+************************************************************
+Message from GentiumBasic-1102:
+To use these fonts, add the following line to the "Files" section of
+xorg.conf:
+
+	FontPath "/usr/local/share/fonts/GentiumBasic/"
+
+Users of older versions of X may additionally have to make sure that
+the freetype module is loaded.  Check /var/log/Xorg.0.log for error
+messages.  If freetype is required, add the following line to the
+"Modules" section of xorg.conf:
+
+	Load "freetype"
+Message from linuxlibertine-g-20120116_1:
+You can start using the fonts by following these instructions:
+
+Add the following line to the "Files" section of your x.org configuration file:
+
+	FontPath "/usr/local/share/fonts/LinLibertineG/"
+Message from crosextrafonts-caladea-20130214_1:
+You can start using the fonts by following these instructions:
+
+Add the following line to the "Files" section of your x.org configuration file:
+
+	FontPath "/usr/local/share/fonts/Caladea/"
+-----------------------------------------------------------------
+

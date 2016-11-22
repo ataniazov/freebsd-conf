@@ -64,6 +64,8 @@ archivemount
 fusefs-simple-mtpfs
 gnome-vfs
 fusefs-gnome-vfs
+eclipse
+libreoffice
 
 
 sudo make install clean
