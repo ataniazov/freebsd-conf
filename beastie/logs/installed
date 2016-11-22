@@ -46,7 +46,7 @@ chromium
 filezilla
 wget
 htop
-ghc (haskell compiler)
+#ghc (haskell compiler)
 gnome-calculator
 wpa_supplicant
 py27-ranger
@@ -66,6 +66,7 @@ gnome-vfs
 fusefs-gnome-vfs
 eclipse
 libreoffice
+tr-libreoffice
 
 
 sudo make install clean
