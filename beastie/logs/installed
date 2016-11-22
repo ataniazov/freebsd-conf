@@ -2,8 +2,8 @@ sudo pkg install
 ----------------
 pkg
 sudo
-vim-tiny
-git-tiny
+vim-lite
+git-lite
 bash
 bash-completion
 xorg
@@ -47,6 +47,7 @@ filezilla
 wget
 htop
 ghc (haskell compiler)
+gnome-calculator
 wpa_supplicant
 py27-ranger
 terminus-font
@@ -55,6 +56,14 @@ xdg-user-dirs
 #gtk-xfce-engine
 #xfce
 zoneinfo
+automount
+#automounter
+#pam_mount
+mtpfs
+archivemount
+fusefs-simple-mtpfs
+gnome-vfs
+fusefs-gnome-vfs
 
 
 sudo make install clean

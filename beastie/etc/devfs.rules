@@ -1,0 +1,10 @@
+[localrules=10]
+add path 'usb*'          mode 0660 group operator
+add path 'ad[0-9]\*'     mode 0660 group operator
+add path 'ada[0-9]\*'    mode 0660 group operator
+add path 'da[0-9]\*'     mode 0660 group operator
+add path 'acd[0-9]\*'    mode 0660 group operator
+add path 'cd[0-9]\*'     mode 0660 group operator
+add path 'xpt[0-9]\*'    mode 0660 group operator
+add path 'mmcsd[0-9]\*'  mode 0660 group operator
+add path 'usb/\*'        mode 0660 group operator

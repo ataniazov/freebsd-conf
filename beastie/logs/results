@@ -2,15 +2,20 @@
 edited root files
 ------------------
 /boot/loader.conf
+
 /etc/rc.conf
 /etc/sysctl.conf
 /etc/fstab
-/etc/X11/xorg.conf
+#/etc/X11/xorg.conf
 /etc/wpa_supplicant.conf
 /etc/hosts
 /etc/devfs.conf
+/etc/devfs.rules
 /etc/make.conf
+/etc/auto_master
+
 /usr/local/share/X11/xkb/symbols/us
+/usr/local/etc/X11/xorg.conf
 /usr/local/etc/X11/xorg.conf.d/driver-intel.conf
 /usr/local/etc/X11/xorg.conf.d/keyboard-zap.conf
 /usr/local/etc/X11/xorg.conf.d/keyboard-us-dvorak.conf
@@ -18,10 +23,14 @@ edited root files
 /usr/local/etc/slim.conf
 /usr/local/share/fonts/TrueType/
 /usr/local/etc/polkit-1/rules.d/50-default.rules
+/usr/local/etc/automount.conf
 
 
 changed user files
 ------------------
+~/.config/i3/
+~/.config/i3status/
+~/.config/fontconfig/
 ~/.xinitrc
 ~/.bashrc
 ~/.fonts.conf
