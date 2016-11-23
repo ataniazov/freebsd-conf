@@ -9,4 +9,4 @@ sleep 0.5
 xfsettingsd &
 xfce4-power-manager &
 xfce4-volumed &
-redshift -l 40.7:29.9 -t 5700:5000 -g 0.8 -m randr &
+redshift -l 40.7:29.9 -t 5900:5500 -g 0.8 -m randr &

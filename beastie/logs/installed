@@ -74,6 +74,7 @@ openjdk8
 openjdk8-jre
 intellij
 eclipse
+gitg
 #ghc (haskell compiler)
 
 filezilla
