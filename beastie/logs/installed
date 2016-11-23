@@ -54,6 +54,7 @@ automount
 #pam_mount
 ~archivemount
 ~mtpfs
+fusefs-ext4fuse
 ~fusefs-simple-mtpfs
 ~gnome-vfs
 ~fusefs-gnome-vfs
