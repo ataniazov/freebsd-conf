@@ -71,6 +71,9 @@ zathura-djvu
 gnome-calculator
 ristretto
 evince-lite
+compton
+conky
+jq
 
 openjdk8
 openjdk8-jre
