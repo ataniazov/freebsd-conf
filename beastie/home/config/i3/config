@@ -178,7 +178,7 @@ bindsym $mod+r mode "resize"
 bar {
 	position top
         #status_command i3status
-        status_command $HOME/.config/i3/my_i3status.sh
+        status_command $HOME/.config/i3status/i3statusTitle.sh
 	tray_output primary
 	colors {
 		background #222222
