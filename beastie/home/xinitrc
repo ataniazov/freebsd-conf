@@ -1,0 +1,12 @@
+#!/bin/sh
+PATH=$PATH:$HOME/.local/bin; export PATH
+export LANG=en_US.UTF-8
+export LC_MESSAGES=en_US.UTF-8
+export LC_TIME=en_US.UTF-8
+export LANG="en_US.UTF-8"
+export LC_ALL="en_US.UTF-8"
+# Use XToolkit in java applications
+#export AWT_TOOLKIT=XToolkit
+#export _JAVA_OPTIONS=-Dawt.useSystemAAFontSettings=on -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+#exec ibus-deamon -d -x &
+exec /usr/local/bin/i3

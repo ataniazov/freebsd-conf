@@ -74,6 +74,8 @@ evince-lite
 compton
 conky
 jq
+weka
+p27-pip
 
 openjdk8
 openjdk8-jre
@@ -94,3 +96,7 @@ sudo make install clean
 /usr/ports/x11-fonts/urwfonts
 /usr/ports/x11-fonts/urwfonts-ttf
 /usr/ports/x11-fonts/webfonts
+
+pip
+---
+csvdiff
