@@ -8,5 +8,6 @@ export LC_ALL="en_US.UTF-8"
 # Use XToolkit in java applications
 #export AWT_TOOLKIT=XToolkit
 #export _JAVA_OPTIONS=-Dawt.useSystemAAFontSettings=on -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+#export _JAVA_OPTIONS=-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel -Dswing.crossplatformlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel
 #exec ibus-deamon -d -x &
 exec /usr/local/bin/i3

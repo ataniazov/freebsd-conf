@@ -30,6 +30,7 @@ gtk-arc-themes (+ github arc-icons)
 xdg-user-dirs
 #gtk-xfce-engine
 #xfce
+greybird-theme
 
 xarchiver
 rar
@@ -74,8 +75,6 @@ evince-lite
 compton
 conky
 jq
-weka
-p27-pip
 
 openjdk8
 openjdk8-jre
@@ -83,8 +82,10 @@ intellij
 eclipse
 gitg
 #ghc (haskell compiler)
+#weka
+#p27-pip
 
-filezilla
+#filezilla
 
 gimp
 libreoffice
@@ -99,4 +100,4 @@ sudo make install clean
 
 pip
 ---
-csvdiff
+#csvdiff
