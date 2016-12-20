@@ -80,6 +80,7 @@ openjdk8
 openjdk8-jre
 intellij
 eclipse
+netbeans
 gitg
 #ghc (haskell compiler)
 #weka
@@ -87,6 +88,7 @@ gitg
 
 #filezilla
 
+inkscape
 gimp
 libreoffice
 tr-libreoffice
