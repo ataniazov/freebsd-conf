@@ -19,7 +19,7 @@ order += "disk /"
 order += "wireless _first_"
 order += "ethernet _first_"
 order += "battery 0"
-#order += "cpu_temperature 0"
+order += "cpu_temperature 0"
 order += "load"
 order += "tztime local"
 
@@ -59,7 +59,8 @@ tztime local {
 }
 
 cpu_temperature 0 {
-        format = "T: %degrees <deg>C"
+        format = "T: %degrees °C"
+	path = "hw.acpi.thermal.tz0.temperature"
         #path = "/sys/devices/platform/coretemp.0/temp1_input"
         #path = "dev.cpu.0.temperature"
 }
