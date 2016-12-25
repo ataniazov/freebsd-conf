@@ -85,6 +85,8 @@ gitg
 #ghc (haskell compiler)
 #weka
 #p27-pip
+python35
+intellij-pycharm
 
 #filezilla
 
