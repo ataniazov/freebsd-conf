@@ -87,6 +87,7 @@ gitg
 #p27-pip
 python35
 intellij-pycharm
+npm
 
 #filezilla
 
@@ -105,3 +106,7 @@ sudo make install clean
 pip
 ---
 #csvdiff
+
+npm
+---
+peerflix
