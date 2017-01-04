@@ -46,7 +46,8 @@ sudo pkg install vlc mpv cmus
 sysctl hw.snd.default_unit=2
 
 # Java
-sudo pkg install openjdk8 openjdk8-jre
+sudo pkg install openjdk8
+openjdk8-jre
 
 mount -t fdescfs fdesc /dev/fd
 mount -t procfs proc /proc
@@ -59,3 +60,10 @@ proc	/proc		procfs		rw	0	0
 
 # Intellij Idea
 sudo pkg install intellij
+
+# Synaptics
+sudo pkg install xf86-input-synaptics
+m.synaptics_support="1"
+
+# GroupAdd
+sudo pw groupadd video -g 44 -M delta

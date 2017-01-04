@@ -30,7 +30,7 @@ gtk-arc-themes (+ github arc-icons)
 xdg-user-dirs
 #gtk-xfce-engine
 #xfce
-greybird-theme
+#greybird-theme
 
 xarchiver
 rar
@@ -44,8 +44,10 @@ wget
 htop
 zoneinfo
 #linux-c6
-linux_base-c7
+#linux_base-c7
+linux-c7
 wpa_supplicant
+xf86-input-synaptics
 
 mpv
 cmus
@@ -73,40 +75,56 @@ gnome-calculator
 ristretto
 evince-lite
 compton
-conky
+#conky
 jq
 
 openjdk8
-openjdk8-jre
+#openjdk8-jre
 intellij
-eclipse
-netbeans
+#eclipse
+#netbeans
 gitg
 #ghc (haskell compiler)
 #weka
 #p27-pip
-python35
+python36
 intellij-pycharm
 npm
 
 #filezilla
 
-inkscape
-gimp
+#inkscape
+#gimp
 libreoffice
 tr-libreoffice
-
 
 sudo make install clean
 -----------------------
 /usr/ports/x11-fonts/urwfonts
 /usr/ports/x11-fonts/urwfonts-ttf
 /usr/ports/x11-fonts/webfonts
+#/usr/ports/java/intellij
+#/usr/ports/java/intellij-pycharm
+/usr/ports/emulators/linux_base-c7
 
-pip
----
+intellij-fsnotifier-20160221_1
+libinotify-20160505
+autoconf-2.69_1
+m4-1.4.17_1,1
+texinfo-6.1.20160425,1
+help2man-1.47.4
+p5-Locale-gettext-1.06
+autoconf-wrapper-20131203
+automake-1.15_1
+automake-wrapper-20131203
+libtool-2.4.6
+intellij-pty4j-0.5_1
+intellij-2016.3.2
+
+pip install
+-----------
 #csvdiff
 
-npm
----
+npm install
+-----------
 peerflix
