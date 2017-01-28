@@ -85,16 +85,18 @@ intellij
 #netbeans
 gitg
 #ghc (haskell compiler)
+hs-cabal-install
 #weka
 #p27-pip
 python36
 intellij-pycharm
+go
 npm
 
-#filezilla
+filezilla
 
 #inkscape
-#gimp
+gimp
 libreoffice
 tr-libreoffice
 
