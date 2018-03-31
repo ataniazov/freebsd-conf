@@ -33,3 +33,9 @@ pkg_add -v <package_name>
 doas pkg_add -v bash
 chsh -s /usr/local/bin/bash
 ```
+
+## Shutdown
+
+```
+shutdown -p now
+```
