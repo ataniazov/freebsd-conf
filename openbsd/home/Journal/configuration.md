@@ -39,3 +39,15 @@ chsh -s /usr/local/bin/bash
 ```
 shutdown -p now
 ```
+
+## Window Manager
+
+```
+doas pkg_add -v slim slim-themes i3
+```
+
+## Browser
+
+```
+doas pkg_add -v firefox-esr
+```
