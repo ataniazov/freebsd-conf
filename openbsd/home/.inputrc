@@ -1,0 +1,42 @@
+# Editing mode
+
+# Set vi editing mode
+set editing-mode vi
+$if mode=vi
+set keymap vi-command
+# To avoid strange things
+#$include /etc/inputrc
+# these are for vi-command mode
+"\e[A":history-search-backward
+"\e[B":history-search-forward
+j:history-search-forward
+k:history-search-backward
+set keymap vi-insert
+# these are for vi-insert mode
+"\e[A":history-search-backward
+"\e[B":history-search-forward
+$endif
+
+# Faster completion
+
+# The single tab shows all possible completions.
+#set show-all-if-unmodified on
+set show-all-if-ambiguous On
+# Ignore case
+set completion-ignore-case On
+
+# Colorized completion
+
+# Color files by types
+set colored-stats On
+# Append char to indicate type
+set visible-stats On
+# Mark symlinked directories
+set mark-symlinked-directories On
+# Color the common prefix
+set colored-completion-prefix On
+# Color the common prefix in menu-complete
+set menu-complete-display-prefix On
+
+# Disabling control echo
+set echo-control-characters off
