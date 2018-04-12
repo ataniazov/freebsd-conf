@@ -17,4 +17,5 @@ git
 bash
 vim
 xfce4-terminal
+xfce4-settings
 htop
